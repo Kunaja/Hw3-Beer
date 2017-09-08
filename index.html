@@ -1,0 +1,51 @@
+<html>
+        <head>
+            <title>Beers Info</title>
+            <script src='js/index.js'></script>  
+            <link rel="stylesheet" href="css/index.css" />      
+        </head>
+        <body onload="getBeersAPI()">
+            
+            <div align="center">
+            <h1>Beers Info</h1>
+            </br>
+            <input type="text" id="name" placeholder="name" list="beers"/>
+            <datalist id="beers">
+                    <option value="Buzz">
+                    <option value="Trashy Blonde">
+                    <option value="Berliner Weisse With Yuzu - B-Sides">
+                    <option value="Pilsen Lager">
+                    <option value="Avery Brown Dredge">
+                    <option value="Electric India">
+                    <option value="AB:12">
+                    <option value="Fake Lager">
+                    <option value="AB:07">
+                    <option value="Bramling X">
+                    <option value="Misspent Youth">
+                    <option value="Arcade Nation">
+                    <option value="Movember">
+                    <option value="Alpha Dog">
+                    <option value="Mixtape 8">
+                    <option value="Libertine Porter">
+                    <option value="AB:06">
+                    <option value="Russian Doll – India Pale Ale">
+                    <option value="Hello My Name Is Mette-Marit">
+                    <option value="Rabiator">
+                    <option value="Vice Bier">
+                    <option value="Devine Rebel (w/ Mikkeller)">
+                    <option value="Storm">
+                    <option value="The End Of History">
+                    <option value="Bad Pixie">              
+             </datalist>
+            </br></br>
+            <input type="text" id="yeast" placeholder="yeast" />
+            </br></br>
+            <button onclick="getBeerAPIByName(getElementById('name').value,getElementById('yeast').value)">Search</button>
+            </div>
+            <div id="container">                   
+                <h1 id= txt align="center">Result</h1>
+                <div id="result" align="center"></div>
+            </div>
+        </body>
+        </html>
+        
